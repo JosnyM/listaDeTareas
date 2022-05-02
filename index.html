@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lista de Tareas</h1>
+  </header>
+  <main>
+    <form>
+      <div class="text-container">
+        <p>Bienvenido/a a la aplicación web "Lista de tareas"</p>
+          <p>- Nuestra aplicación te permitirá organizar tus tareas, asignar fechas y prioridad</p>
+          <p>- Una vez completada la tarea podrás tacharla</p>
+          <p>- También podrás limpiar la lista de tareas y borrarlas</p>
+          <p>- Quedaran almacenadas en caso de que necesites acceder luego</p>
+      </div>
+      <p>
+        <label for="taskInput">Nueva tarea:</label>
+      <input type="text" id="taskInput" name="task">
+      <label for="priority"></label>
+      </p>
+      <p class="date-and-priority">
+        <input
+        class="form-control mb-3"
+        type="date"
+        name="date"
+        p/>
+      <select name="priorities" id="task-priority-input" class="custom-select custom-select-sm mb-3">
+        <option value="" disabled selected>Prioridad</option>               
+        <option value="Alta">Alta</option>
+        <option value="Media">Media</option>
+        <option value="Baja">Baja</option>
+      </select>
+      </p>
+    <button type="button" id="add">Añadir</button>
+    <button type="button" id="clean">Limpiar</button>
+    <button type="button" id="empty">Borrar</button>
+    </form>
+    <ul>
+    </ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
